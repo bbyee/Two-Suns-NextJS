@@ -52,7 +52,11 @@ option {
   color: #2e2f30;
 }
 
-#description {
+#description1 {
+  text-align: center;
+}
+
+#description2 {
   text-align: center;
 }
 
@@ -62,38 +66,44 @@ hr.solid {
 
 .hero {
   position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../public/tatooinesuns.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  filter: brightness(90%);
-}
-
-.hero-content {
-  position: relative;
-  font-family: "Andale Mono", sans-serif;
-  color: white;
+.hero-overlay {
   text-align: center;
-  margin: 0.625rem;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  h2 {
+    font-size: 20vw;
+    color: #ffffffs;
+    letter-spacing: 0.45rem;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.hero-title {
-  font-size: 30px;
-  font-weight: auto;
-  margin-bottom: 0;
+.hero-image {
+  display: block;
+  //overflow: visible;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+p {
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  &:last-of-type {
+    padding-top: 0;
+  }
+}
+
+div,
+p {
+  font-family: Andale Mono;
+  color: #030303;
+  text-rendering: optimizeLegibility;
 }

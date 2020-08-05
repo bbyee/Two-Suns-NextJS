@@ -10,19 +10,31 @@ export default function HomePage() {
         <Head>
           <title>Two Suns Translations</title>
         </Head>
-        <section className="hero">
-          <div className="hero-content">
-            <h2 className="hero-title">Two Suns Translations</h2>
-            {/* <img
+        <div className="hero">
+          <div className="hero-overlay">
+            <h2>Two Suns Translator</h2>
+          </div>
+          <img
             src="/tatooinesuns.png"
             alt="tatooinesuns"
-            className="homeimage"
-          ></img> */}
-          </div>
-        </section>
+            className="hero-image"
+          ></img>
+        </div>
+        {/* <section className="hero">
+          <div className="hero-content">
+            <h2 className="hero-title">Two Suns Translations</h2> */}
+        {/* <img
+          src="/tatooinesuns.png"
+          alt="tatooinesuns"
+          className="homeimage"
+        ></img> */}
+        {/* </div>
+        </section> */}
+
         <h2>Bright Suns Traveler</h2>
-        <p>Want to talk like a Sith? Gungan? Mandalorian?</p>
-        <p id="description">
+
+        <p id="description1">Want to talk like a Sith? Gungan? Mandalorian?</p>
+        <p id="description2">
           This application lets you translate any phrase into different
           languages of the Star Wars universe!
         </p>
