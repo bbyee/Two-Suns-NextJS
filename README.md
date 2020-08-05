@@ -35,7 +35,7 @@ For production usage, run the command to build the application followed by the c
 
 ## Deployment
 
-Currently deployed at: <two-suns-next-js.vercel.app>
+Currently deployed [HERE](https://two-suns-next-js.vercel.app/)
 
 ## Built With
 
