@@ -6,11 +6,14 @@
 
 A MVP Application that lets you translate phrase into a variety of Star Wars languages! 
 
+
 ![Demo](demo/main.gif)
 
 
 
+
 Please note: This app utilizes a free API that allows 60 API calls per day, 5 per hour!
+
 
 
 ## Getting Started
