@@ -6,6 +6,10 @@
 
 A MVP Application that lets you translate phrase into a variety of Star Wars languages! 
 
+![Alt Text](Desktop/Screen-Recording-2020-08-04-at-10.54.57-PM.gif)
+
+
+
 Please note: This app utilizes a free API that allows 60 API calls per day, 5 per hour!
 
 
