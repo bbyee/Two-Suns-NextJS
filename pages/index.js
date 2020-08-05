@@ -12,7 +12,7 @@ export default function HomePage() {
         </Head>
         <div className="hero">
           <div className="hero-overlay">
-            <h2>Two Suns Translator</h2>
+            <h2 id="hero-header">Two Suns Translator</h2>
           </div>
           <img
             src="/tatooinesuns.png"
@@ -41,11 +41,11 @@ export default function HomePage() {
         <hr class="solid" />
 
         <Form />
+        <h4 className="mainflexcontainer">
+          <Link href="/about">About </Link>
+          <Link href="/contact">Contact</Link>
+        </h4>
       </Layout>
-      <h4 className="mainflexcontainer">
-        <Link href="/about">About </Link>
-        <Link href="/contact">Contact</Link>
-      </h4>
     </div>
   );
 }
