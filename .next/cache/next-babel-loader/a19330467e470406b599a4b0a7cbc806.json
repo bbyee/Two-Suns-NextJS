@@ -1,0 +1,1 @@
+{"ast":null,"code":"function HomePage() {\n  return;\n}","map":{"version":3,"sources":["/Users/christinayee/Desktop/heroApp/pages/index.js"],"names":["HomePage"],"mappings":"AAAA,SAASA,QAAT,GAAoB;AAClB;AACD","sourcesContent":["function HomePage() {\n  return \n}\n"]},"metadata":{},"sourceType":"script"}

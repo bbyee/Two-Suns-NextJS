@@ -1,0 +1,61 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #d49f1c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.mainflexcontainer {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+  font-family: Andale Mono;
+}
+
+h2 {
+  text-align: center;
+}
+
+label,
+select,
+option {
+  font-family: Andale Mono, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #2e2f30;
+}
+
+.translationSection,
+.translated {
+  font-family: Andale Mono, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #2e2f30;
+}
+
+#description {
+  text-align: center;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}

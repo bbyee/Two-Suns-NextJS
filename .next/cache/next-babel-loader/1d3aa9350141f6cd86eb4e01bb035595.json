@@ -1,0 +1,1 @@
+{"ast":null,"code":"function HomePage() {\n  return;\n}\n\n_c = HomePage;\n\nvar _c;\n\n$RefreshReg$(_c, \"HomePage\");","map":{"version":3,"sources":["/Users/christinayee/Desktop/heroApp/pages/index.js"],"names":["HomePage"],"mappings":"AAAA,SAASA,QAAT,GAAoB;AAClB;AACD;;KAFQA,Q","sourcesContent":["function HomePage() {\n  return \n}\n"]},"metadata":{},"sourceType":"script"}
