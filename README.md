@@ -4,7 +4,7 @@
 
 ## Description
 
-A MVP Application that lets you translate phrase into a variety of Star Wars languages! 
+A MVP Application built with Next.js that lets you translate phrase into a variety of Star Wars languages! 
 
 
 ![Demo](demo/main.gif)
@@ -47,6 +47,8 @@ Currently deployed [HERE](https://two-suns-next-js.vercel.app/)
 ## Built With
 
 -Next.js
+
+
 -React
 
 ## Authors
