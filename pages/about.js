@@ -20,7 +20,7 @@ function About() {
         <style jsx>{`
           p {
             color: #2e2f30;
-            font-size: 12px;
+            font-size: 30px;
           }
           div {
             background: red;
