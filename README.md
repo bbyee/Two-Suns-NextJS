@@ -30,11 +30,12 @@ This will launch the app with Next.js in developement mode.
 For production usage, run the command to build the application followed by the command to start the production server:
 
 -`npm run build`
+
 -`npm run start`
 
 ## Deployment
 
-Currently deployed at: two-suns-next-js.vercel.app
+Currently deployed at: <two-suns-next-js.vercel.app>
 
 ## Built With
 
