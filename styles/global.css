@@ -45,11 +45,17 @@ option {
   color: #2e2f30;
 }
 
-.translationSection,
+.translationSection {
+  font-family: Andale Mono, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
 .translated {
   font-family: Andale Mono, Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #2e2f30;
+  border: solid #2e2f30 1px;
 }
 
 #description1 {
@@ -76,7 +82,7 @@ hr.solid {
   height: 100%;
   h2 {
     font-size: 20vw;
-    color: #ffffffs;
+    color: #ffffff;
     letter-spacing: 0.45rem;
     font-weight: 700;
     margin-left: auto;
