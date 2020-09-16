@@ -59,31 +59,31 @@ export default function HomePage({ history, translation, histCount }) {
           <Link href="/about">About </Link>
           <Link href="/contact">Contact</Link>
         </h4>
-      </Layout>
-      <ul>
-        {history.map((p) => (
-          <li className="translation" key={p.id}>
-            <Link href={`/translation?id=${p.id}`}>
-              <a>
-                {/* <span>{p.phrase}</span>
+        <ul>
+          {history.map((p) => (
+            <li className="translation" key={p.id}>
+              <Link href={`/translation?id=${p.id}`}>
+                <a>
+                  {/* <span>{p.phrase}</span>
                 <span>{p.translated}</span> */}
-              </a>
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <nav>
+          {page > 1 && (
+            <Link href={`/?page=${page - 1}&limit=9`}>
+              <a>Previous</a>
             </Link>
-          </li>
-        ))}
-      </ul>
-      <nav>
-        {page > 1 && (
-          <Link href={`/?page=${page - 1}&limit=9`}>
-            <a>Previous</a>
-          </Link>
-        )}
-        {page < pageCount && (
-          <Link href={`/?page=${page + 1}&limit=9`}>
-            <a className="next">Next</a>
-          </Link>
-        )}
-      </nav>
-    </div>
+          )}
+          {page < pageCount && (
+            <Link href={`/?page=${page + 1}&limit=9`}>
+              <a className="next">Next</a>
+            </Link>
+          )}
+        </nav>
+      </div>
+    </Layout>
   );
 }
