@@ -2,8 +2,22 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "../components/layout";
 import Form from "../components/Form.jsx";
+import fetch from "isomorphic-unfetch";
 
-export default function HomePage() {
+HomePage.getInitialProps = async ({ req, query }) => {
+  const protocol = req
+    ? `${req.headers["x-forwarded-proto"]}:`
+    : location.protocol;
+  const host = req ? req.headers["x-forwarded-host"] : location.host;
+  const pageRequest = `${protocol}//${host}/api/profiles?page=${
+    query.page || 1
+  }&limit=${query.limit || 9}`;
+  const res = await fetch(pageRequest);
+  const json = await res.json();
+  return json;
+};
+
+export default function HomePage({ history, translation, histCount }) {
   return (
     <div>
       <Layout>
@@ -46,6 +60,30 @@ export default function HomePage() {
           <Link href="/contact">Contact</Link>
         </h4>
       </Layout>
+      <ul>
+        {history.map((p) => (
+          <li className="translation" key={p.id}>
+            <Link href={`/translation?id=${p.id}`}>
+              <a>
+                {/* <span>{p.phrase}</span>
+                <span>{p.translated}</span> */}
+              </a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <nav>
+        {page > 1 && (
+          <Link href={`/?page=${page - 1}&limit=9`}>
+            <a>Previous</a>
+          </Link>
+        )}
+        {page < pageCount && (
+          <Link href={`/?page=${page + 1}&limit=9`}>
+            <a className="next">Next</a>
+          </Link>
+        )}
+      </nav>
     </div>
   );
 }
